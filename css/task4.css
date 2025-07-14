@@ -279,15 +279,17 @@ footer{
 
 .footer-policy{
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     gap: 15px;
     border-top: 2px solid white;
-    padding: 15px 0px 32px;
+    padding: 15px 0 32px;
+    justify-content: center;
 }
 
 .footer-policy a{
     color: white;
     font-weight: 100;
+    white-space: nowrap;
 }
 
 .rights{
@@ -331,7 +333,7 @@ footer{
     }
 }    
 
-@media screen and(max-widht: 550px){
+@media screen and (max-width: 550px){
     .footer-body-links, .footer-policy, .footer-social-media, .rights{
         display: none;
     }
@@ -340,7 +342,7 @@ footer{
     }
 }
 
-@media screen and(max-widht: 450px) {
+@media screen and (max-width: 450px) {
     header{
         padding: 30px;
     }
